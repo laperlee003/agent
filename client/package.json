@@ -1,0 +1,23 @@
+{
+  "name": "agentClient",
+  "version": "1.1.0",
+  "description": "agentClient",
+  "scripts": {
+    "start": "node --inspect index.js",
+    "buildWin": "pkg -t win package.json",
+    "buildLinux": "pkg -t linux package.json",
+    "buildMac": "pkg -t mac package.json"
+  },
+  "dependencies": {
+    "log4js": "^6.9.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "ws": "^8.14.2"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "html/**/*"
+    ]
+  }
+}
