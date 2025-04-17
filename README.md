@@ -30,24 +30,39 @@ masterServer 云服务器端提供给客户端连接的端口
 # 运行
 ### 第一步
 先在server目录执行npm install
+
 然后进行程序打包
+
 打包需要本地先安装pkg依赖
+
 windows包：npm run buildWin
+
 linux包：npm run buildLinux
+
 mac包：npm run buildMac
+
 打包好了以后将打包程序发送到云服务器端运行起来(config.json也记得传上去，跟执行程序同目录)
 
 ### 第二步
 先在client目录执行npm install
+
 然后进行程序打包
+
 打包需要本地先安装pkg依赖
+
 windows包：npm run buildWin
+
 linux包：npm run buildLinux
+
 mac包：npm run buildMac
+
 打包好了以后配置好congfig.json文件执行打包程序
+
 这时候服务端会显示新的代理端连接
+
 客户端会显示服务器连接成功
 
 ### 第三步
 请求云服务器端地址和端口(server/config.json文件里面httpServer的端口号)
+
 就可以将本地web服务通过云服务器实现对外访问
